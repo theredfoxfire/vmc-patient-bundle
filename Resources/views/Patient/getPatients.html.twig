@@ -1,0 +1,18 @@
+{% block content %}
+    <h1 class="title">{{ 'patient.list'|trans({}, 'VmcPatientBundle') }}</h1>
+
+    <ul id="patient-list">
+        {% for patient in patients %}
+            <li>
+                <a href="{{ path('api_1_get_patient', {'id': patient.id}) }}">{{ patient.name }}</a>
+                {#[<a href="{{ path('api_1_edit_patients', {'id': patient.id}) }}">{{ 'patient.edit.link'|trans({}, 'VmcPatientBundle') }}</a>]#}
+                {#[<a href="{{ path('api_1_remove_patients', {'id': patient.id}) }}">{{ 'patient.remove.link'|trans({}, 'VmcPatientBundle') }}</a>]#}
+            </li>
+        {% else %}
+            <li>{{ 'patient.list.empty'|trans({}, 'VmcPatientBundle') }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        <a href="{{ path('api_1_new_patient') }}">{{ 'patient.new.link'|trans({}, 'VmcPatientBundle') }}</a>
+    </p>
+{% endblock %}

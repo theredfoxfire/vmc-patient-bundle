@@ -1,0 +1,5 @@
+ais_patient_patient:
+    type: rest
+    prefix: /v1
+    resource: Vmc\PatientBundle\Controller\PatientController
+    name_prefix:  api_1_ # naming collision

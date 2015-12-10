@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+
+    <parameters>
+        <parameter key="ais_patient.patient.handler.class">Vmc\PatientBundle\Handler\PatientHandler</parameter>
+        <parameter key="ais_patient.patient.class">Vmc\PatientBundle\Entity\Patient</parameter>
+    </parameters>
+
+    <services>
+        <service id="ais_patient.patient.handler" class="%ais_patient.patient.handler.class%">
+            <argument type="service" id="doctrine.orm.entity_manager" />
+            <argument>%ais_patient.patient.class%</argument>
+            <argument type="service" id="form.factory"></argument>
+        </service>
+    </services>
+
+</container>

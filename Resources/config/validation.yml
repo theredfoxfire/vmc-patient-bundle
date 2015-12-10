@@ -1,0 +1,11 @@
+# src/Vmc/PatientBundle/Resources/config/validation.yml
+Vmc\PatientBundle\Entity\Patient:
+    properties:
+        name:
+            - NotBlank: ~
+            - NotNull: ~
+            - Length:
+                min: 2
+                max: 100
+                minMessage: "Your title must be at least {{ limit }} characters length"
+                maxMessage: "Your title name cannot be longer than {{ limit }} characters length"
