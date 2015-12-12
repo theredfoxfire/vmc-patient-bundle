@@ -12,20 +12,20 @@ Interface PatientInterface
     public function getId();
 
     /**
-     * Set noPatient
+     * Set noRm
      *
-     * @param string $noPatient
+     * @param string $noRm
      *
      * @return Patient
      */
-    public function setNoPatient($noPatient);
+    public function setNoRm($noRm);
 
     /**
-     * Get noPatient
+     * Get noRm
      *
      * @return string
      */
-    public function getNoPatient();
+    public function getNoRm();
 
     /**
      * Set name
@@ -34,46 +34,30 @@ Interface PatientInterface
      *
      * @return Patient
      */
-    public function setNama($name);
+    public function setName($name);
 
     /**
      * Get name
      *
      * @return string
      */
-    public function getNama();
+    public function getName();
 
     /**
-     * Set nameSingkat
+     * Set alamat
      *
-     * @param string $nameSingkat
+     * @param string $alamat
      *
      * @return Patient
      */
-    public function setNamaSingkat($nameSingkat);
+    public function setAlamat($alamat);
 
     /**
-     * Get nameSingkat
+     * Get alamat
      *
      * @return string
      */
-    public function getNamaSingkat();
-
-    /**
-     * Set email
-     *
-     * @param string $email
-     *
-     * @return Patient
-     */
-    public function setEmail($email);
-
-    /**
-     * Get email
-     *
-     * @return string
-     */
-    public function getEmail();
+    public function getAlamat();
 
     /**
      * Set phone
@@ -108,52 +92,36 @@ Interface PatientInterface
     public function getGender();
 
     /**
-     * Set tempatLahir
+     * Set birthDate
      *
-     * @param string $tempatLahir
-     *
-     * @return Patient
-     */
-    public function setTempatLahir($tempatLahir);
-
-    /**
-     * Get tempatLahir
-     *
-     * @return string
-     */
-    public function getTempatLahir();
-
-    /**
-     * Set tanggalLahir
-     *
-     * @param \DateTime $tanggalLahir
+     * @param \DateTime $birthDate
      *
      * @return Patient
      */
-    public function setTanggalLahir($tanggalLahir);
+    public function setBirthDate($birthDate);
 
     /**
-     * Get tanggalLahir
+     * Get birthDate
      *
      * @return \DateTime
      */
-    public function getTanggalLahir();
+    public function getBirthDate();
 
     /**
-     * Set agama
+     * Set addtionalInfo
      *
-     * @param string $agama
+     * @param string $addtionalInfo
      *
      * @return Patient
      */
-    public function setAgama($agama);
+    public function setAddtionalInfo($addtionalInfo);
 
     /**
-     * Get agama
+     * Get addtionalInfo
      *
      * @return string
      */
-    public function getAgama();
+    public function getAddtionalInfo();
 
     /**
      * Set isDelete
@@ -172,146 +140,194 @@ Interface PatientInterface
     public function getIsDelete();
 
     /**
-     * Set provinsiId
+     * Set isDiabet
      *
-     * @param integer $provinsiId
-     *
-     * @return Patient
-     */
-    public function setProvinsiId($provinsiId);
-
-    /**
-     * Get provinsiId
-     *
-     * @return integer
-     */
-    public function getProvinsiId();
-
-    /**
-     * Set kabupatenId
-     *
-     * @param integer $kabupatenId
+     * @param boolean $isDiabet
      *
      * @return Patient
      */
-    public function setKabupatenId($kabupatenId);
+    public function setIsDiabet($isDiabet);
 
     /**
-     * Get kabupatenId
+     * Get isDiabet
      *
-     * @return integer
+     * @return boolean
      */
-    public function getKabupatenId();
+    public function getIsDiabet();
 
     /**
-     * Set kecamatan
+     * Set diabetInfo
      *
-     * @param string $kecamatan
+     * @param string $diabetInfo
      *
      * @return Patient
      */
-    public function setKecamatan($kecamatan);
+    public function setDiabetInfo($diabetInfo);
 
     /**
-     * Get kecamatan
+     * Get diabetInfo
      *
      * @return string
      */
-    public function getKecamatan();
+    public function getDiabetInfo();
 
     /**
-     * Set alamat
+     * Set isBloodIssue
      *
-     * @param string $alamat
+     * @param boolean $isBloodIssue
      *
      * @return Patient
      */
-    public function setAlamat($alamat);
+    public function setIsBloodIssue($isBloodIssue);
 
     /**
-     * Get alamat
+     * Get isBloodIssue
      *
-     * @return string
+     * @return boolean
      */
-    public function getAlamat();
+    public function getIsBloodIssue();
 
     /**
-     * Set pos
+     * Set bloodIssueInfo
      *
-     * @param string $pos
+     * @param string $bloodIssueInfo
      *
      * @return Patient
      */
-    public function setPos($pos);
+    public function setBloodIssueInfo($bloodIssueInfo);
 
     /**
-     * Get pos
+     * Get bloodIssueInfo
      *
      * @return string
      */
-    public function getPos();
+    public function getBloodIssueInfo();
 
     /**
-     * Set asalSekolah
+     * Set isHiv
      *
-     * @param string $asalSekolah
+     * @param boolean $isHiv
      *
      * @return Patient
      */
-    public function setAsalSekolah($asalSekolah);
+    public function setIsHiv($isHiv);
 
     /**
-     * Get asalSekolah
+     * Get isHiv
      *
-     * @return string
+     * @return boolean
      */
-    public function getAsalSekolah();
+    public function getIsHiv();
 
     /**
-     * Set jumlahUn
+     * Set hivInfo
      *
-     * @param string $jumlahUn
+     * @param string $hivInfo
      *
      * @return Patient
      */
-    public function setJumlahUn($jumlahUn);
+    public function setHivInfo($hivInfo);
 
     /**
-     * Get jumlahUn
+     * Get hivInfo
      *
      * @return string
      */
-    public function getJumlahUn();
+    public function getHivInfo();
 
     /**
-     * Set jurusanSekolah
+     * Set isHipertensi
      *
-     * @param string $jurusanSekolah
+     * @param boolean $isHipertensi
      *
      * @return Patient
      */
-    public function setJurusanSekolah($jurusanSekolah);
+    public function setIsHipertensi($isHipertensi);
 
     /**
-     * Get jurusanSekolah
+     * Get isHipertensi
      *
-     * @return string
+     * @return boolean
      */
-    public function getJurusanSekolah();
-    
-        /**
-     * Set nationality
+    public function getIsHipertensi();
+
+    /**
+     * Set hipertensiInfo
      *
-     * @param string $nationality
+     * @param string $hipertensiInfo
      *
      * @return Patient
      */
-    public function setNationality($nationality);
+    public function setHipertensiInfo($hipertensiInfo);
 
     /**
-     * Get nationality
+     * Get hipertensiInfo
      *
      * @return string
      */
-    public function getNationality();
+    public function getHipertensiInfo();
+
+    /**
+     * Set isAlergy
+     *
+     * @param boolean $isAlergy
+     *
+     * @return Patient
+     */
+    public function setIsAlergy($isAlergy);
+
+    /**
+     * Get isAlergy
+     *
+     * @return boolean
+     */
+    public function getIsAlergy();
+
+    /**
+     * Set alergyInfo
+     *
+     * @param string $alergyInfo
+     *
+     * @return Patient
+     */
+    public function setAlergyInfo($alergyInfo);
+
+    /**
+     * Get alergyInfo
+     *
+     * @return string
+     */
+    public function getAlergyInfo();
+
+    /**
+     * Set isOthers
+     *
+     * @param boolean $isOthers
+     *
+     * @return Patient
+     */
+    public function setIsOthers($isOthers);
+
+    /**
+     * Get isOthers
+     *
+     * @return boolean
+     */
+    public function getIsOthers();
+
+    /**
+     * Set othersInfo
+     *
+     * @param string $othersInfo
+     *
+     * @return Patient
+     */
+    public function setOthersInfo($othersInfo);
+
+    /**
+     * Get othersInfo
+     *
+     * @return string
+     */
+    public function getOthersInfo();
 }

@@ -25,22 +25,27 @@ Vmc\PatientBundle\Entity\Patient:
    type: text
   is_delete:
    type: boolean
-   nullable: true
-  provinsi_id:
-   type: integer
-  kabupaten_id:
-   type: integer
-  kecamatan:
-   type: string
-  alamat:
-   type: string
-  pos:
-   type: string
-  asal_sekolah:
-   type: string
-  no_ijasah:
-   type: string
-  jumlah_un:
-   type: string
-  jurusan_sekolah:
-   type: string
+  is_diabet:
+   type: boolean
+  diabet_info:
+   type: text
+  is_blood_issue:
+   type: boolean
+  blood_issue_info:
+   type: text
+  is_hiv:
+   type: boolean
+  hiv_info:
+   type: text
+  is_hipertensi:
+   type: boolean
+  hipertensi_info:
+   type: text
+  is_alergy:
+   type: boolean
+  alergy_info:
+   type: text
+  is_others:
+   type: boolean
+  others_info:
+   type: text
