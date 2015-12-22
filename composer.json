@@ -1,5 +1,5 @@
 {
-    "name" : "Vmc/PatientBundle",
+    "name" : "vmc/patientbundle",
     "description" : "A bundle filled with Patient",
     "type" : "symfony-bundle",
     "authors" : [{
